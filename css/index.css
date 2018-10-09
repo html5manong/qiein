@@ -1,0 +1,223 @@
+.head-top{
+    width: 96%;
+    padding: 0 2%;
+    display: flex;
+    height: 50px;
+    background: #333;
+    line-height: 50px;
+}
+.menu {
+    color: #fff;
+    display: inline-block;
+}
+.logo{
+    display: inline-block;
+    text-align: center;
+    flex: 1;
+}
+.logo img {
+    height: 30px;
+    vertical-align: middle;
+}
+.head-btn {
+    padding: 0 10px;
+}
+.head-btn button{
+    border: none;
+    background: #38f;
+    color: #fff;
+    display: none;
+}
+.banner {
+    width: 100%;
+    padding: 100px 0;
+    background: url("../img/qiein_head.png") no-repeat center center;
+    background-size: cover;
+    justify-items: center;
+}
+.banner p {
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    font-family: '微软雅黑';
+    letter-spacing: 1px;
+}
+/*数据中心*/
+.data-re{
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+}
+.data-title {
+    text-align: center;
+    font-size: 14px;
+    font-family: '微软雅黑';
+    margin-bottom: 20px;
+}
+.data-row{
+    display: flex;
+    width: 96%;
+    padding: 0px 2%;
+}
+.data-item{
+    width: 50%;
+    color: #000;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+.data-item:nth-child(2n){
+    border-left: 1px solid #e0e0e0;
+}
+.data-item .ziti{
+    font-size: 24px;
+    display: block;
+}
+.data-item .title{
+    font-size: 12px;
+}
+.data-item .data{
+    font-size: 12px;
+}
+.data-item .data span{
+    font-size: 24px;
+    color: #38f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/*系统产品*/
+.system{
+    padding: 50px 0;
+    background: linear-gradient(to right, #9655eb, #27cfea);
+}
+.system-title{
+    color: #fff;
+    text-align: center;
+}
+.system-title p{
+    line-height: 28px;
+    font-family: '微软雅黑';
+}
+.system-title .main-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.system-title .sub-title{
+    font-size: 12px;
+}
+.system-row{
+    padding:10px 0;
+    display: flex;
+    width: 100%;
+}
+.system-item{
+    padding:10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+    background: #fff;
+    margin: 0 auto;
+}
+.system-item:nth-child(2n){
+    margin-left: 2%;
+}
+.system-item .s-ziti{
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #000;
+}
+.system-item .s-main-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #38f;
+}
+.system-item .s-sub-title{
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+}
+.system-item .s-sub-title span{
+    color: #38f;
+}
+.system-text p{
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    line-height: 28px;
+}
+.partner {
+    margin-top: 20px;
+}
+/*接单系统*/
+.order{
+    background: #000;
+    width: 100%;
+    padding: 50px 0;
+}
+.order-title h2{
+    background: url("../img/text-bg02.jpg") no-repeat left center;
+    background-position: 31% 29%;
+    color: transparent;
+    -webkit-background-clip:text;
+    text-align: center;
+}
+.order-item{
+    padding:10px;
+    color: #ffe5db;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+.order-item:nth-child(2n){
+    text-align: right;
+}
+ .order-item p {
+     font-size: 14px;
+     line-height: 24px;
+ }
+ .order-item .o-sub-title{
+     font-size: 13px;
+ }
+
+/*团队介绍*/
+.team {
+    padding: 50px 0;
+}
+.team .team-title{
+    color: #000;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.team-swiper-item{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+}
+.team-swiper-item img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.team-swiper-item p {
+    text-align: center;
+    line-height: 24px;
+    font-family: '微软雅黑';
+}
+.t-sub-title{
+    font-size: 12px;
+}
+
+/*版权区域*/
+.copy{
+    background: #000;
+    height: 50px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+}
