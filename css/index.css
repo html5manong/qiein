@@ -113,7 +113,8 @@
     width: 100%;
 }
 .system-item{
-    padding:10px;
+    width: 90%;
+    padding:10px 0;
     text-align: center;
     color: #fff;
     border-radius: 15px;
@@ -124,9 +125,9 @@
     margin-left: 2%;
 }
 .system-item .s-ziti{
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 5px;
-    color: #000;
+    color: #38f;
 }
 .system-item .s-main-title{
     font-size: 16px;
