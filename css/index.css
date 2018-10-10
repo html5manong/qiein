@@ -5,6 +5,10 @@
     height: 50px;
     background: #333;
     line-height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 .menu {
     color: #fff;
@@ -37,6 +41,7 @@
     background: url("../img/qiein_head.png") no-repeat center center;
     background-size: cover;
     justify-items: center;
+    margin-top: 50px;
 }
 .banner p {
     color: #fff;
@@ -76,6 +81,7 @@
 .data-item .ziti{
     font-size: 24px;
     display: block;
+    color: transparent;
 }
 .data-item .title{
     font-size: 12px;
@@ -88,6 +94,20 @@
     color: #38f;
     font-weight: bold;
     margin-right: 10px;
+}
+.data-icon {
+    padding-top: 10px;
+    text-align: center;
+}
+.data-icon i {
+    font-size: 36px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.data-icon span{
+    font-size: 12px;
+    vertical-align: middle;
 }
 
 /*系统产品*/
@@ -222,6 +242,40 @@
      font-size: 13px;
  }
 
+ .order-cj{
+
+ }
+ .order-cj .o-cj-title{
+     text-align: center;
+     font-size: 18px;
+     margin-bottom: 10px;
+ }
+ .o-cj-row{
+     display: flex;
+     margin-bottom: 10px;
+ }
+ .o-cj-item{
+     width: 25%;
+     text-align: center;
+     line-height: 28px;
+ }
+ .order-cj .cj-text{
+     background: url("../img/text-bg02.jpg") no-repeat;
+     -webkit-background-clip:text;
+     color: transparent;
+     background-position:41% 0 ;
+ }
+ .order-cj .cj-name{
+     font-size: 12px;
+ }
+ .order-cj .cj-data{
+     font-size: 16px;
+     font-weight: bold;
+ }
+ .us-box{
+     background: #101010;
+ }
+
 /*团队介绍*/
 .team {
     padding: 50px 0;
@@ -251,6 +305,39 @@
     font-size: 12px;
 }
 
+.super{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.super::after{
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    left: 10%;
+    background: #e0e0e0;
+    top: 0;
+    content: '';
+}
+.super-title{
+    line-height: 24px;
+    text-align: center;
+}
+.super-title h2{
+    font-size: 16px;
+}
+.super-title p {
+    font-size: 12px;
+}
+.super-teacher {
+    text-align: center;
+}
+.super-teacher span {
+    font-size: 14px;
+    font-family: '微软雅黑';
+    font-weight: bold;
+}
 /*版权区域*/
 .copy{
     background: #000;
@@ -259,4 +346,20 @@
     font-size: 12px;
     line-height: 50px;
     text-align: center;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    left: -100%;
+    top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+}
+.nav ul li {
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+
 }

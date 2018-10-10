@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="head-top">
-        <span class="menu">
+        <span class="menu" id="menu">
             <i class="iconfont icon-caidan"></i>
         </span>
         <div class="logo">
@@ -45,7 +45,7 @@
                  <p class="data"><span><i class="counter">2400</i>万</span>条</p>
              </div>
          </div>
-        <div class="data-row">
+         <div class="data-row">
             <div class="data-item">
                 <i class="iconfont icon-hezuohuoban ziti"></i>
                 <p class="title">每日存储处理客户信息</p>
@@ -57,9 +57,17 @@
                 <p class="data"><span><i  class="counter">50</i>万</span>家</p>
             </div>
         </div>
+         <div class="data-icon">
+             <span>
+                 <i class="iconfont icon-koubeiLOGO"></i>
+                 <i class="iconfont icon-zhifubao"></i>
+             </span>
+             <span>支付宝口碑金牌合作伙伴</span>
+
+         </div>
     </div>
     <!--电商系统-->
-    <div class="system">
+    <div id="ds_system" class="system">
         <div class="system-title">
             <p class="main-title">草莓卷电商系统</p>
             <p class="sub-title">不断融入王牌商家的电商流程，用起来简单高效！</p>
@@ -134,7 +142,7 @@
         </div>
     </div>
     <!--接单系统-->
-    <div class="order">
+    <div id="order_box" class="order">
         <div class="order-top-title">
             <p class="o-top-title">草莓卷悦展，接单系统</p>
             <p class="o-top-title1">面向年轻时尚的接单神器，我们不是文件夹和网页</p>
@@ -152,13 +160,39 @@
                 <p class="o-word-small">务实高效</p>
             </div>
         </div>
+        <div class="order-cj">
+            <div class="o-cj-title">
+                <h2 class="cj-text">全国销售破纪录</h2>
+                <h2 class="cj-text">Record</h2>
+            </div>
+            <div class="o-cj-row">
+                <div class="o-cj-item">
+                    <p class="cj-text cj-name">成交</p>
+                    <p class="cj-text cj-data">1800单</p>
+                </div>
+                <div class="o-cj-item">
+                    <p class="cj-text cj-name">接待</p>
+                    <p class="cj-text cj-data">4500人</p>
+                </div>
+                <div class="o-cj-item">
+                    <p class="cj-text cj-name">成交率</p>
+                    <p class="cj-text cj-data">80%</p>
+                </div>
+                <div class="o-cj-item">
+                    <p class="cj-text cj-name">均价提升</p>
+                    <p class="cj-text cj-data">15%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="us_box" class="us-box">
         <div class="order-title">
             <h2>我们的专业优势&超级服务</h2>
         </div>
         <div class="order-row">
             <div class="order-item">
-               <p> <i class="iconfont icon-right"></i>
-               <span>客户端同步</span></p>
+                <p> <i class="iconfont icon-right"></i>
+                    <span>客户端同步</span></p>
                 <p class="o-sub-title">非网页 支持机器加密保障数据安全 非授权禁止安装裙装</p>
             </div>
             <div class="order-item">
@@ -189,7 +223,7 @@
         </div>
     </div>
     <!--团队-->
-    <div class="team">
+    <div id="team_box" class="team">
         <div class="team-title">
             <p>我们的工程师家人</p>
             <p class="t-sub-title">平均年龄20+的年轻人正日夜奋战帮助影楼数字化管理，提高效能</p>
@@ -261,8 +295,30 @@
             <!-- Add Pagination -->
         </div>
     </div>
+    <div id="super_box" class="super">
+        <div class="super-title">
+            <h2>协作产品共创者</h2>
+            <p>才华横溢的他们用自己的实战经验，帮助我们完善了软件，</p>
+            <p>迭代了功能</p>
+        </div>
+        <div class="super-teacher">
+            <span>彭亚云老师</span>
+            <span>阿峰老师</span>
+            <span>鱼雷老师</span>
+        </div>
+    </div>
     <div class="copy">
         <p>Copyright © 2018 草莓卷 All rights reserved</p>
+    </div>
+    <div class="nav" id="nav">
+        <ul>
+            <li id="nav-ds">电商系统</li>
+            <li id="nav-yz">悦展系统</li>
+            <li id="nav-team">优秀团队</li>
+            <li id="nav-us">关于我们</li>
+            <li id="nav-super">超级伙伴</li>
+            <li>帮助中心</li>
+        </ul>
     </div>
 </body>
 <script src="js/countup.js"></script>
@@ -275,6 +331,7 @@
     });
 </script>
 <script>
+    // 合作企业轮播
     var swiper = new Swiper('.partner', {
         delay: 1000,//1秒切换一次
         autoplay:true,
@@ -282,6 +339,7 @@
         slidesPerView: 2,
         spaceBetween: 30,
     });
+    //  团队轮播
     var swiper1 = new Swiper('.team-swiper', {
         delay: 1000,//1秒切换一次
         autoplay:true,
@@ -299,5 +357,39 @@
         },
     });
 
+</script>
+<script>
+    $(document).ready(function(){
+        // 伸缩导航
+        $('#menu').on('click',function () {
+            var leftNum = $('#nav').position().left
+            if(leftNum !== 0){
+                 $('#nav').animate({left:0})
+            } else {
+                $('#nav').animate({left:-100+'%'})
+            }
+        })
+    });
+    // 页面内部平滑滚动到指定位置
+    $("#nav-ds").on('click',function(){
+        $('#nav').animate({left:-100+'%'})
+        $('html,body').animate({scrollTop: $('#ds_system').offset().top}, 500);
+    });
+    $("#nav-yz").on('click',function(){
+        $('#nav').animate({left:-100+'%'})
+        $('html,body').animate({scrollTop: $('#order_box').offset().top}, 500);
+    });
+    $("#nav-team").on('click',function(){
+        $('#nav').animate({left:-100+'%'})
+        $('html,body').animate({scrollTop: $('#team_box').offset().top}, 500);
+    });
+    $("#nav-super").on('click',function(){
+        $('#nav').animate({left:-100+'%'})
+        $('html,body').animate({scrollTop: $('#super_box').offset().top}, 500);
+    });
+    $("#nav-us").on('click',function(){
+        $('#nav').animate({left:-100+'%'})
+        $('html,body').animate({scrollTop: $('#us_box').offset().top}, 500);
+    });
 </script>
 </html>
