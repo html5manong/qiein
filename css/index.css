@@ -396,7 +396,7 @@
 }
 .f-bot{
     position: relative;
-    overflow: hidden;
+    padding-bottom: 10px;
 }
 .f-bot p{
     color: #ffe5db;
