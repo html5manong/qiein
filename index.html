@@ -22,7 +22,7 @@
             <img src="img/logo.png" alt="">
         </div>
         <div class="head-btn">
-            <button>我要咨询</button>
+            <button  id="consult">我要咨询</button>
         </div>
     </div>
     <div class="banner-ad-wrap">
@@ -342,6 +342,9 @@
             <li>帮助中心</li>
         </ul>
     </div>
+    <div class="qrcode" id="qrcode">
+        <img src="img/qiein-wechat.jpg" alt="">
+    </div>
 </body>
 <script src="js/countup.js"></script>
 <script src="js/waypoints.js"></script>
@@ -399,27 +402,34 @@
                 $('#nav').animate({left:-100+'%'})
             }
         })
+        // 页面内部平滑滚动到指定位置
+        $("#nav-ds").on('click',function(){
+            $('#nav').animate({left:-100+'%'})
+            $('html,body').animate({scrollTop: $('#ds_system').offset().top}, 500);
+        });
+        $("#nav-yz").on('click',function(){
+            $('#nav').animate({left:-100+'%'})
+            $('html,body').animate({scrollTop: $('#order_box').offset().top}, 500);
+        });
+        $("#nav-team").on('click',function(){
+            $('#nav').animate({left:-100+'%'})
+            $('html,body').animate({scrollTop: $('#team_box').offset().top}, 500);
+        });
+        $("#nav-super").on('click',function(){
+            $('#nav').animate({left:-100+'%'})
+            $('html,body').animate({scrollTop: $('#super_box').offset().top}, 500);
+        });
+        $("#nav-us").on('click',function(){
+            $('#nav').animate({left:-100+'%'})
+            $('html,body').animate({scrollTop: $('#us_box').offset().top}, 500);
+        });
+        $('#qrcode').on('click',function () {
+            $('#qrcode').css('display','none')
+        })
+        $('#consult').on('click',function () {
+            $('#qrcode').css('display','block')
+        })
     });
-    // 页面内部平滑滚动到指定位置
-    $("#nav-ds").on('click',function(){
-        $('#nav').animate({left:-100+'%'})
-        $('html,body').animate({scrollTop: $('#ds_system').offset().top}, 500);
-    });
-    $("#nav-yz").on('click',function(){
-        $('#nav').animate({left:-100+'%'})
-        $('html,body').animate({scrollTop: $('#order_box').offset().top}, 500);
-    });
-    $("#nav-team").on('click',function(){
-        $('#nav').animate({left:-100+'%'})
-        $('html,body').animate({scrollTop: $('#team_box').offset().top}, 500);
-    });
-    $("#nav-super").on('click',function(){
-        $('#nav').animate({left:-100+'%'})
-        $('html,body').animate({scrollTop: $('#super_box').offset().top}, 500);
-    });
-    $("#nav-us").on('click',function(){
-        $('#nav').animate({left:-100+'%'})
-        $('html,body').animate({scrollTop: $('#us_box').offset().top}, 500);
-    });
+
 </script>
 </html>
