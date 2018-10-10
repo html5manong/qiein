@@ -344,6 +344,12 @@
     width: 100%;
     background: #000;
 }
+.floor-swiper{
+    height: 150px;
+}
+.floor-title{
+    margin-bottom: 10px;
+}
 .floor-title h2{
     text-align: center;
     font-weight: bold;
@@ -355,6 +361,59 @@
 }
 .floor .f-text{
     color: #ffe5db;
+}
+.floor-item {
+    background: #fff;
+    width: 80%;
+    margin: 10px auto;
+    background: #101010;
+    padding: 10px;
+    border: 1px solid #333;
+}
+.f-top{
+    display: flex;
+    color: #ffe5db;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.f-top img {
+    width: 60px;
+    border-radius: 4px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.f-top .f-info{
+    flex: 1;
+    line-height: 24px;
+}
+.f-info-name1{
+    font-size: 14px;
+    font-weight: bold;
+}
+.f-info-name2{
+    font-size: 13px;
+}
+.f-bot{
+    position: relative;
+    overflow: hidden;
+}
+.f-bot p{
+    color: #ffe5db;
+    font-size: 12px;
+}
+.f-bot-name{
+    float: left;
+}
+.f-bot .f-contact{
+    color: #ffe5db;
+    padding:0 10px;
+    background: #0057ff;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+    height: 30px;
+    line-height: 30px;
 }
 /*版权区域*/
 .copy{
