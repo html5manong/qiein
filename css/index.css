@@ -29,10 +29,11 @@
 .head-btn {
     padding: 0 10px;
 }
-.head-btn button{
-    border: none;
-    background: #38f;
+.head-btn span{
     color: #fff;
+}
+.head-btn span i {
+    font-size: 24px;
 }
 .banner-ad{
     margin-top: 50px;
