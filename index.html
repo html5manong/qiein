@@ -25,23 +25,23 @@
             <span  id="consult"><i class="iconfont icon-zixun"></i></span>
         </div>
     </div>
-    <div class="banner-ad-wrap">
-        <div class="swiper-container banner-ad">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/products01.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/products02.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/products03.png" alt="">
-                </div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <div class="swiper-pagination banner-pa"></div>
-        </div>
-    </div>
+    <!--<div class="banner-ad-wrap">-->
+        <!--<div class="swiper-container banner-ad">-->
+            <!--<div class="swiper-wrapper">-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="img/products01.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="img/products02.png" alt="">-->
+                <!--</div>-->
+                <!--<div class="swiper-slide">-->
+                    <!--<img src="img/products03.png" alt="">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--&lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+            <!--<div class="swiper-pagination banner-pa"></div>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="banner">
         <p>我们更懂影楼</p>
         <p>给您带来振奋人心的数字化技术</p>
@@ -164,6 +164,24 @@
             <p class="o-top-title1">面向年轻时尚的接单神器，我们不是文件夹和网页</p>
             <p class="o-top-title1">无与伦比的门店创新销售模式</p>
         </div>
+        <div class="product-banner">
+            <div class="swiper-container banner-ad">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/products01.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/products02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/products03.png" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
         <div class="order-jfr">
             <img src="img/jfr-ceo.png" alt="">
             <div class="o-word">
@@ -360,9 +378,6 @@
         delay: 1000,//1秒切换一次
         autoplay:true,
         loop:true,
-        pagination: {
-            el: '.banner-pa',
-        },
     });
     // 合作企业轮播
     var swiper = new Swiper('.partner', {
