@@ -434,13 +434,21 @@
     top: 50px;
     box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
 }
+.nav ul {
+    padding: 10px 0;
+}
 .nav ul li {
     color: #000;
     text-align: center;
-    line-height: 40px;
+    line-height: 26px;
     display: inline-block;
     width: 30%;
-
+    font-size: 13px;
+    border-right: 1px solid #e0e0e0;
+    margin-bottom: 5px;
+}
+.nav ul li:nth-child(3n){
+    border-right: none;
 }
 
 .qrcode {
