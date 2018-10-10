@@ -25,6 +25,23 @@
             <button>我要咨询</button>
         </div>
     </div>
+    <div class="banner-ad-wrap">
+        <div class="swiper-container banner-ad">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/products01.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/products02.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/products03.png" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination banner-pa"></div>
+        </div>
+    </div>
     <div class="banner">
         <p>我们更懂影楼</p>
         <p>给您带来振奋人心的数字化技术</p>
@@ -47,7 +64,7 @@
          </div>
          <div class="data-row">
             <div class="data-item">
-                <i class="iconfont icon-hezuohuoban ziti"></i>
+                <i class="iconfont icon-cengji ziti"></i>
                 <p class="title">每日存储处理客户信息</p>
                 <p class="data"><span><i  class="counter">20</i></span>T</p>
             </div>
@@ -73,7 +90,7 @@
         </div>
         <div class="system-row">
             <div class="system-item">
-                <i class="iconfont icon-shandian-copy s-ziti"></i>
+                <i class="iconfont icon-zhiye s-ziti"></i>
                 <p class="s-main-title">基于领先者实战研发</p>
                 <p class="s-sub-title"><span>每月</span>更新一次</p>
                 <p class="s-sub-title">
@@ -336,6 +353,14 @@
     });
 </script>
 <script>
+    var swiperad = new Swiper('.banner-ad', {
+        delay: 1000,//1秒切换一次
+        autoplay:true,
+        loop:true,
+        pagination: {
+            el: '.banner-pa',
+        },
+    });
     // 合作企业轮播
     var swiper = new Swiper('.partner', {
         delay: 1000,//1秒切换一次

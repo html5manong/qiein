@@ -35,13 +35,23 @@
     color: #fff;
     display: none;
 }
+.banner-ad{
+    margin-top: 50px;
+}
+.banner-ad-wrap{
+    width: 100%;
+    display: none;
+}
+.banner-ad img{
+    width: 100%;
+    display: block;
+}
 .banner {
     width: 100%;
     padding: 100px 0;
     background: url("../img/qiein_head.png") no-repeat center center;
     background-size: cover;
     justify-items: center;
-    margin-top: 50px;
 }
 .banner p {
     color: #fff;
@@ -81,7 +91,7 @@
 .data-item .ziti{
     font-size: 24px;
     display: block;
-    color: transparent;
+    color: #000;
 }
 .data-item .title{
     font-size: 12px;
@@ -381,4 +391,9 @@
     display: inline-block;
     width: 30%;
 
+}
+
+.swiper-pagination-bullet-active{
+    width: 20px !important;
+    border-radius: 5px;
 }
