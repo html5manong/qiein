@@ -338,6 +338,24 @@
     font-family: '微软雅黑';
     font-weight: bold;
 }
+
+.floor{
+    padding: 50px 0;
+    width: 100%;
+    background: #000;
+}
+.floor-title h2{
+    text-align: center;
+    font-weight: bold;
+    line-height: 24px;
+}
+.floor-title p{
+    font-size: 12px;
+    padding: 0 10px;
+}
+.floor .f-text{
+    color: #ffe5db;
+}
 /*版权区域*/
 .copy{
     background: #000;
@@ -361,5 +379,6 @@
     text-align: center;
     line-height: 40px;
     display: inline-block;
+    width: 30%;
 
 }
