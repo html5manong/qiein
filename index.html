@@ -181,6 +181,18 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+        <div class="ipad-banner">
+            <div class="swiper-container ipad-ad">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/products02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/products03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="order-jfr">
             <img src="img/jfr-ceo.png" alt="">
@@ -439,6 +451,11 @@
 </script>
 <script>
     var swiperad = new Swiper('.banner-ad', {
+        delay: 1000,//1秒切换一次
+        autoplay:true,
+        loop:true,
+    });
+    var swiperipad = new Swiper('.ipad-ad', {
         delay: 1000,//1秒切换一次
         autoplay:true,
         loop:true,

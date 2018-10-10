@@ -181,6 +181,7 @@
     background: #101010;
     width: 100%;
     padding: 50px 0;
+    position: relative;
 }
 .order-jfr{
     display: flex;
@@ -479,5 +480,27 @@
 }
 .banner-ad img {
     width: 100%;
+    display: block;
+}
+.ipad-banner{
+    width: 181.3px;
+    height: 125px;
+    background: url("../img/qiein-ipad.png") no-repeat left center;
+    background-size: cover;
+    position: absolute;
+    top: 280px;
+    right: 0;
+    z-index: 999;
+    padding-top: 4px;
+}
+.ipad-ad{
+    width: 165px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+}
+.ipad-ad img {
+    width: 100%;
+    height: 121px;
     display: block;
 }
