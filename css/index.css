@@ -423,6 +423,10 @@
     height: 30px;
     line-height: 30px;
 }
+.f-contact i {
+    vertical-align: middle;
+    display: inline-block;
+}
 /*版权区域*/
 .copy{
     background: #000;
