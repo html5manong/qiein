@@ -333,6 +333,10 @@
 }
 .super-teacher {
     text-align: center;
+    padding: 0 10px;
+}
+.super-teacher p {
+    line-height: 28px;
 }
 .super-teacher span {
     font-size: 14px;
@@ -397,6 +401,7 @@
 .f-bot{
     position: relative;
     padding-bottom: 10px;
+    height: 20px;
 }
 .f-bot p{
     color: #ffe5db;
@@ -404,6 +409,8 @@
 }
 .f-bot-name{
     float: left;
+    height: 30px;
+    line-height: 30px;
 }
 .f-bot .f-contact{
     color: #ffe5db;
